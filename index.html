@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Starter Template</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <header class="todo-header">
+                <h1>My Todo List</h1>
+                <div class="subtitle">Stay organized and productive</div>
+            </header>
+            <main>
+                <div class="todo-input-container">
+                    <input type="text" id="todoInput" class="todo-input" placeholder="Add a new task..."
+                        autocomplete="off">
+                    <button id="addTodoBtn" class="add-btn">Add</button>
+                </div>
+                <div id="filterContainer" class="filter-container">
+                    <button id="allTodos"class="filter-btn active">All</button>
+                    <button id="active" class="filter-btn">Active</button>
+                    <button id="completed" class="filter-btn">Completed</button>
+                </div>
+                <ul id="todolist" class="todo-list">
+                    
+                </ul>
+
+
+            </main>
+            <footer>
+                <div class="todo-footer">
+                    <span id="itemleft" class="item-left"><span id="remainingCount"></span> items left</span>
+                    <button id="clearCompletedBtn" class="clear-completed">Clear Completed</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
